@@ -1,3 +1,6 @@
+import time
+start_time = time.time()
+
 sols = set()
 
 for i in range(1000,10000):
@@ -10,3 +13,4 @@ for i in range(1000,10000):
                 print("{} * {} == {}".format(j,k,i))
 
 print("the solution is",sum(sols))
+print("%s seconds" % (time.time() - start_time))

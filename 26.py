@@ -1,3 +1,6 @@
+import time
+start_time = time.time()
+
 def pow(a, b):
     result = 1
     for i in range(b + 1):
@@ -39,3 +42,4 @@ for p in range(2, 1000):
             max_p = p
 
 print(max_p)
+print("%s seconds" % (time.time() - start_time))

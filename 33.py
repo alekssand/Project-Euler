@@ -1,3 +1,6 @@
+import time
+start_time = time.time()
+
 for den in range(11, 100):
     if den % 10 == 0:
         continue
@@ -18,3 +21,4 @@ for den in range(11, 100):
         if egg[0] and egg[1]:
             if num*egg[1] == den*egg[0]:
                 print (num, den+1)
+                print("%s seconds" % (time.time() - start_time))

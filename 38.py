@@ -1,3 +1,5 @@
+
+
 from itertools import permutations
 
 numbers = [''.join(p) for p in permutations('123456789')]

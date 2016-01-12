@@ -1,3 +1,7 @@
+import time
+start_time = time.time()
+
+
 import math
 items="0123456789"
 
@@ -19,7 +23,9 @@ def allOptions(l,n):
 	if(len(l)==len(items)):
 		count+=1
 		if count==wantedNumber:
-			print l
+			print(l)
 
 for item in items:
 	allOptions("",item)
+        
+print("%s seconds" % (time.time() - start_time))

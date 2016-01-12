@@ -1,3 +1,6 @@
+import time
+start_time = time.time()
+
 def make_change(amt, denom):
     denom.sort(reverse=True)
     if amt == 0:
@@ -12,3 +15,4 @@ def make_change(amt, denom):
     return make_change(amt - denom[index], denom[index:]) + make_change(amt, denom[(index + 1):])
 
 print(make_change(200, [200, 100, 50, 20, 10, 5, 2, 1]))
+print("%s seconds" % (time.time() - start_time))

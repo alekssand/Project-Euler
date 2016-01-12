@@ -1,3 +1,6 @@
+import time
+start_time = time.time()
+
 def isPrime(n):
     if n<2: return False
     if n==2: return True
@@ -25,4 +28,5 @@ for n in range(10,lim+1):
         else:
             c += 1
 
-print('Number of circular primes <upper limit: ',c+4)
+print('Answer: ',c+4)
+print("%s seconds" % (time.time() - start_time))

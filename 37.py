@@ -1,4 +1,6 @@
 import time
+start_time = time.time()
+
 def is_truncatable(n):
     for d in range(1, len(str(n))):
         if not is_prime(str(n)[d:]) or not is_prime(str(n)[:d]): 
@@ -33,7 +35,6 @@ def generate_attempts(attemptsArray,n):
     else:
         return attemptsArray           
         
-start = time.time()
 tp = []
 numbers=['1','2','3','5','7','9']
 numLen = 2
@@ -45,4 +46,4 @@ while len(tp)<11:
     numLen+=1
     
 print(sum(tp))
-print(time.time()-start)
+print("%s seconds" % (time.time() - start_time))

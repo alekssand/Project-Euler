@@ -1,5 +1,7 @@
-from math import sqrt
+import time
+start_time = time.time()
 
+from math import sqrt
 
 def is_prime(n):
     if n < 2:
@@ -20,3 +22,4 @@ for a in range(-1000, 1000):
             maximum_number = n
             max_a, max_b = a, b
 print(max_a * max_b)
+print("%s seconds" % (time.time() - start_time))
