@@ -21,10 +21,9 @@ def main():
     print("Sum of primes: ", MaxNum, " is ", sum(primes), ".",  sep='')
     pass
 
-
-start = time.clock()
+start_time = time.time()
 
 if __name__ == '__main__':
     main()
     
-print("Exectution time: ", '%.4f' %(time.clock() - start), " seconds.",  sep='')
+print("%s seconds" % (time.time() - start_time))

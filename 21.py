@@ -1,4 +1,6 @@
-from datetime import datetime
+import time
+start_time = time.time()
+
 
 def divisor_sum(x):
 	
@@ -32,9 +34,6 @@ def main():
 			continue
 	return sum(ans)
 
-start = datetime.now()
 k = main()
-stop = datetime.now()
-delta = stop - start
 print(k)
-print(delta)
+print("%s seconds" % (time.time() - start_time))

@@ -1,3 +1,6 @@
+import time
+start_time = time.time()
+
 from itertools import takewhile
 
 class HasSum(Exception): pass
@@ -31,3 +34,4 @@ def main():
 
 if __name__ == '__main__':
     print main()
+    print("%s seconds" % (time.time() - start_time))

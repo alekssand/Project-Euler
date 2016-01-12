@@ -1,3 +1,6 @@
+import time
+start_time = time.time()
+
 dp = {}
 
 def solve(n):
@@ -16,3 +19,4 @@ def solve(n):
 
 relevant = range(1, 1000001)
 print (max(zip(relevant, map(solve, relevant)), key = lambda x : x[1]))
+print("%s seconds" % (time.time() - start_time))

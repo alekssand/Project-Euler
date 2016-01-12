@@ -1,3 +1,6 @@
+import time
+start_time = time.time()
+
 def writeNumbers(low, high):
     ones = ['', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine']
     teens = ['ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen']
@@ -40,3 +43,4 @@ def countDigits(nums):
     return total
 
 print (countDigits(writeNumbers(1, 1000)))
+print("%s seconds" % (time.time() - start_time))

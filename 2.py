@@ -1,3 +1,6 @@
+import time
+start_time = time.time()
+
 prev, cur = 0, 1
 total = 0; 
 while True: 
@@ -8,3 +11,4 @@ while True:
         total += cur
         
 print(total)
+print("%s seconds" % (time.time() - start_time))

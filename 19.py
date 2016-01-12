@@ -1,3 +1,6 @@
+import time
+start_time = time.time()
+
 def getDayOfWeek(n):
 	days=["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]
 	return days[n%7]
@@ -33,3 +36,4 @@ for d in range(1901,2001):
 			else:
 				count = count+30
 print (ans)
+print("%s seconds" % (time.time() - start_time))

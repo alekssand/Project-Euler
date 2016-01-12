@@ -23,14 +23,14 @@ def find_divisor(num):
             
             
 def find(div_count):
-    start = time.time()
+    start_time = time.time()
     
     i = 0
     while find_divisor(triangle_num(i)) < div_count:
         i += 1
         find_divisor(triangle_num(i))
         
-    print (time.time() - start)
     print (triangle_num(i))
+    print("%s seconds" % (time.time() - start_time))
         
 find(500)

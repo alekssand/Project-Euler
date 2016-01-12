@@ -1,4 +1,5 @@
 import math, time
+
 def allPermutColour(countTuple):
     countBlack, countColour = countTuple
     sum_ = countBlack + countColour 
@@ -14,7 +15,7 @@ def partitions(n):
 		if p and (len(p) < 2 or p[1] > p[0]):
 			yield [p[0] + 1] + p[1:]
 			
-start = time.time()
+start_time = time.time()
 
 total = 50
 sizeRed, sizeGreen, sizeBlue = 2, 3, 4
@@ -51,4 +52,4 @@ print "Ordered Partitions with Blue Tiles(size=4):       ", res3
 print "                                          ----------------"
 print "Total of different ordered partitions:        ", res1 + res2 + res3
 print
-print time.time() - start, " secs"
+print"%s seconds" % (time.time() - start_time)
