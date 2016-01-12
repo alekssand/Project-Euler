@@ -1,3 +1,6 @@
+import time
+start_time = time.time()
+
 def prime(k):
     for t in range(2,int(k**0.5)+1):
             if k%t==0:
@@ -15,3 +18,4 @@ def pan(j):
 for a in range(17,7654321,2):
     if prime(a) and pan(a):
         print (a)
+        print("%s seconds" % (time.time() - start_time))

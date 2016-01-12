@@ -1,6 +1,7 @@
 import time
 start_time = time.time()
 
+
 def is_truncatable(n):
     for d in range(1, len(str(n))):
         if not is_prime(str(n)[d:]) or not is_prime(str(n)[:d]): 

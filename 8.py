@@ -1,6 +1,6 @@
 import time
-
-a = time.time()
+from functools import reduce
+start_time = time.time()
 
 n = '73167176531330624919225119674426574742355349194934\
 96983520312774506326239578318016984801869478851843\
@@ -30,8 +30,6 @@ for i in range(0, 13):
 def product(lst):
     return reduce((lambda x, y: x*y), lst)
 
-#p = reduce((lambda x, y: x*y), thirteens)
-
 p = product(thirteens)
 
 for i in range(13, 1000):
@@ -40,7 +38,6 @@ for i in range(13, 1000):
     if product(thirteens) > p:
         p = product(thirteens)
     
-print p
+print(p)
 
-b = time.time()
-print b - a
+print("%s seconds" % (time.time() - start_time))

@@ -1,4 +1,6 @@
 import time
+start_time = time.time()
+
 from operator import itemgetter
 
 def integer_right_triangles(p):
@@ -26,5 +28,5 @@ def integer_right_triangles(p):
 if __name__ == "__main__":     
     start = time.clock()   
     print(integer_right_triangles(1000))
-    end = time.clock()
-    print("Time: ",end - start," seconds")             
+    print("%s seconds" % (time.time() - start_time))
+           

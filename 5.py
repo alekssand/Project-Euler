@@ -11,4 +11,4 @@ while not isDivisible(number):
     number+= 10
     
 print('The number: ' + str(number))
-print("--- %s seconds ---" % (time.time() - start_time))
+print("%s seconds" % (time.time() - start_time))

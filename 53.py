@@ -1,3 +1,6 @@
+import time
+start_time = time.time()
+
 def factorial(x):
 	if x == 0: return 1
 	res = 1
@@ -24,3 +27,4 @@ for n in range(1, 101):
 			break
 			
 print (counter)
+print("%s seconds" % (time.time() - start_time))

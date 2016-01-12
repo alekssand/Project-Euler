@@ -1,4 +1,6 @@
 import math
+import time
+start_time = time.time()
 
 def is_prime(n, known_primes):
     sqrt_n = math.sqrt(n)
@@ -22,3 +24,4 @@ while count < 10001:
         primes.append(num)
 
 print('10,001st prime: ' + str(num))
+print("%s seconds" % (time.time() - start_time))

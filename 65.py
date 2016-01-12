@@ -1,3 +1,6 @@
+import time
+start_time = time.time()
+
 from functools import reduce
 
 def calcE(m):
@@ -6,3 +9,4 @@ def calcE(m):
 	return reduce(lambda x, y: int(x) + int(y), str(n * 3 + d * 2))
     
 print(calcE(66))
+print("%s seconds" % (time.time() - start_time))

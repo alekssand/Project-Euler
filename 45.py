@@ -1,4 +1,6 @@
 import math
+import time
+start_time = time.time()
 	
 n = 143;
 	
@@ -9,3 +11,4 @@ while True:
 		break
 
 print( n*(2*n-1) )
+print("%s seconds" % (time.time() - start_time))

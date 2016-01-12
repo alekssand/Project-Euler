@@ -1,4 +1,5 @@
-
+import time
+start_time = time.time()
 
 from itertools import permutations
 
@@ -13,3 +14,4 @@ for n in numbers:
 	if s2 / 2 == s1:
 		if n in numbers:
 			print("%s (%s,%s)" % (n,s1,s2))
+            print("%s seconds" % (time.time() - start_time))
